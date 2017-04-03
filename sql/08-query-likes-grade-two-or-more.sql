@@ -1,0 +1,2 @@
+SELECT liker.name AS liker, liker.grade AS liker_grade, likee.name AS likee, likee.grade AS likee_grade
+FROM student_like JOIN student AS liker ON student_like.liker_id = liker.id JOIN student AS likee ON student_like.likee_id = likee.id AND liker.grade = likee.grade + 2;
